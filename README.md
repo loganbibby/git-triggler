@@ -5,7 +5,7 @@ Nano web hook service for handling Git triggers
 
 1. Clone this repo to the server handling the trigger.
 1. Create a [virtual environment](https://virtualenv.pypa.io/en/stable/), activate it, and install the dependencies (`pip install -r requirements.txt`).
-1. Create the [configuration](#Configuration) file.
+1. Create the [configuration](#configuration) file.
 1. Deploy using gunicorn (`gunicorn -w 1 -b 0.0.0.0:5000 server:app`)!
 1. Open your server's firewall to the server's port (5000 in the example above).
 
