@@ -1,0 +1,17 @@
+# Signature Settings
+SIG_HASH_ITERATIONS = 1000 # Number of times to hash
+SIG_TIMESTAMP_EXPIRATION = 300 # Seconds from now to expire timestamp
+SIG_TIMESTAMP_FUTURE = -300 # Seconds into the future to reject timestamp
+
+# Trigger Settings
+TRIGGERS = {
+    # repo-branch
+    'my-repo:master': {
+        # randomly generated token shared between trigger and the server
+        'token': 'W9STlWYxY2hati4m71*X2SZFKgb^0UD2N^z^0PdjOp$EQ6@^bR',
+        # command to run once webhook is authenticated
+        'cmd': '~/update-repo.sh',
+        # hash iterations
+        'iterations': 1000
+    }
+}
